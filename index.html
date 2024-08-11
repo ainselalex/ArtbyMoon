@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Gallery</title>
+    <link class="favicon" rel="icon" type="image/x-icon" href="images/moon-and-stars.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="marquee-wrapper">
+        <div class="marquee"> &#9734; &#9733; Up To 15% Off Every Tuesday &#9733; &#9734; </div>
+    </div>
+    <div class="header-titles">
+        <div class="art-moon">
+            <span class="moon">Art By Moon <img src="images/noun-moon-and-stars-6931174.png" alt="moon and stars" width="60px" height="60px"></span>
+        </div>
+
+        <div class="boston-gallery">
+            <span class="b-gallery">Boston Art <br> Gallery</span>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="menu-container">
+        <div class="menu">
+            <div class="menu-categories">
+                <a href="#">Main</a>
+                <a href="#">Artists</a>
+                <a href="#">Paintings</a>
+                <a href="#">Exhibitions</a>
+                <a href="#">Tickets</a>
+                <a href="#">Contacts</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+
+        <div class="user-profile">
+            <img src="images/9660f10482a7b005fa6d5b12d7738258.jpg" alt="User Avatar" class="avatar" onclick="toggleDropdown()">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <img src="images/image-from-rawpixel-id-6041815-jpeg.jpg" class="d-block mx-lg-auto img-fluid" alt="Hero Image" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Art by Moon Gallery!</h1>
+                <p class="lead">Welcome to Art by Moon Gallery, a visionary art space founded by a collective of passionate artists and curators dedicated to celebrating the diverse expressions of human creativity. Our founders, Jane Smith and Alex Johnson, both accomplished artists with extensive experience in the art world, envisioned a gallery where innovation meets tradition. Their shared mission is to provide a platform where emerging and established artists can showcase their work in a setting that encourages dialogue and inspiration. With backgrounds in art curation and management, Jane and Alex bring a wealth of expertise and a commitment to fostering artistic excellence.</p>
+                <p class="lead">Art by Moon Gallery is a vibrant and eclectic space designed to showcase a wide array of artistic styles and mediums. Our collection features everything from classical paintings to contemporary sculptures, embracing both the avant-garde and the timeless. Each exhibition is thoughtfully curated to offer visitors a rich experience, highlighting the unique vision and talent of each artist. Whether you’re drawn to abstract art, figurative works, or innovative installations, our gallery provides an inclusive environment where art enthusiasts can explore and connect with the creative spirit.</p>
+                <p class="lead">The story of Art by Moon Gallery began in 2020 when Alina Ditsman decided to transform her dream into reality. Initially starting as a small, pop-up exhibition space, the gallery quickly gained recognition for its unique approach to art presentation. As word spread and interest grew, the gallery evolved into a permanent fixture in the art community. Over the years, Art by Moon Gallery has hosted numerous exhibitions, artist talks, and community events, becoming a beloved destination for art lovers. Our history is marked by a commitment to supporting artistic growth and engaging with the local and global art scenes.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Tickets</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Prices</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" charset="UTF-8"></script>    
+</body>
+</html>
