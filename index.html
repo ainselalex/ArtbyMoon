@@ -6,6 +6,7 @@
     <title>Moon Gallery</title>
     <link class="favicon" rel="icon" type="image/x-icon" href="images/moon-and-stars.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -48,8 +49,9 @@
 
     <div class="container py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-lg-6">
-                <img src="images/image-from-rawpixel-id-6041815-jpeg.jpg" class="d-block mx-lg-auto img-fluid" alt="Hero Image" width="700" height="500" loading="lazy">
+            <div class="gallery-images col-lg-6">
+                <img src="images/image-from-rawpixel-id-6041815-jpeg.jpg" class="image-first d-block mx-lg-auto img-fluid" alt="Gallery image" width="700" height="500" loading="lazy">
+                <img src="images/20211117_JO2_8461_MIDRES.jpg" class="d-block mx-lg-auto img-fluid" alt="Gallery image" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Art by Moon Gallery!</h1>
@@ -63,6 +65,125 @@
             </div>
         </div>
     </div>
+
+    <div class="album py-5 bg-body-tertiary">
+
+        <h2 class="gustav">Gustav Klimt ArtWork Section</h2>
+
+        <div class="album-pictures container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/The-Kiss.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/The-Tree-Of-Life.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Portrait-Of-Adele-Bloch-Bauer-1.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Avenue-of-Schloss-Kammer-Park.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Expectation.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/The-Bride.jpg" class="card-img-top" alt="Gallery image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        
+            
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Art By Moon</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-twitter.svg" width="24" height="24" alt="Twitter"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-instagram-144.svg" width="24" height="24" alt="Instagram"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-facebook.svg" width="24" height="24" alt="Facebook"></a></li>
+        </ul>
+        </footer>
+    </div> -->
+
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <!-- <h5>Section</h5> -->
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Main</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Artists</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Paintings</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Exhibitions</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <!-- <h5>Section</h5> -->
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacts</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tickets</a></li>
+              </ul>
+            </div>
+          
+            <div class="col-md-5 offset-md-1 mb-3">
+                <h5 class="nav-item">Contact Us</h5>
+                <p>If you have any questions or need assistance, feel free to reach out to us through the following channels:</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  </li>
+                  <li>
+                    <strong>Email:</strong> <a href="mailto:info@artbymoon.com">info@artbymoon.com</a>
+                  </li>
+                  <li>
+                    <strong>Address:</strong> 123 Moonlight Avenue, Suite 456, Lunar City, LC 78901, USA
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <h6>Our Location</h6>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12656.573474601254!2d-122.41755625164603!3d37.77492962029666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b40a1b81b%3A0x408ab0a8e5c1b8!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1620232846244!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Art By Moon</p>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-twitter.svg" width="24" height="24" alt="Twitter"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-instagram-144.svg" width="24" height="24" alt="Instagram"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/icons8-facebook.svg" width="24" height="24" alt="Facebook"></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
 
     <script src="index.js" charset="UTF-8"></script>    
 </body>
