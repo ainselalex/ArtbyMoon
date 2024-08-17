@@ -1,4 +1,4 @@
-/* Marquee Styles */
+
 .marquee-wrapper {
     position: relative;
     overflow: hidden;
@@ -25,7 +25,7 @@
     }
 }
 
-/* Header Styles */
+
 .art-moon {
     display: flex;
     align-items: center; 
@@ -71,7 +71,7 @@
     right: -50px; 
 }
 
-/* Divider Styles */
+
 .divider {
     width: 100%; 
     height: 1px; 
@@ -79,10 +79,10 @@
     margin-top: 5px; 
 }
 
-/* Menu Container Styles */
+
 .menu-container {
     display: flex;
-    justify-content: space-between; /* Space between menu and profile avatar */
+    justify-content: space-between; 
     padding: 20px;
     align-items: center;
 }
@@ -119,7 +119,7 @@
     background-color: #f0f0f0;
 }
 
-/* User Profile Styles */
+
 .user-profile {
     position: relative;
     display: flex;
@@ -131,7 +131,7 @@
     height: 40px; 
     border-radius: 50%; 
     cursor: pointer; 
-    margin-left: 20px; /* Space between menu and avatar */
+    margin-left: 20px; 
 }
 
 .dropdown-menu {
@@ -158,16 +158,66 @@
     background-color: #f0f0f0;
 }
 
-/* Show Dropdown Menu */
+
 .show {
     display: block;
 }
 
-/* Hero Block Styles */
+
 .row {
-    margin-bottom: 60px; /* Space below the hero section */
+    margin-bottom: 60px; 
 }
 
 .img-fluid {
-    margin-left: 20px; /* Space between the image and the text */
+    margin-left: 20px; 
+}
+
+.gallery-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-first{
+    margin-bottom: 30px;
+}
+
+
+.album {
+    width: 100%;
+    text-align: center;
+}
+
+.album-pictures .card {
+    border: none; 
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.album-pictures .card:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.album-pictures .card-img-top {
+    width: 100%; 
+    height: auto; 
+}
+
+.album-pictures{
+    background-color: whitesmoke;
+}
+
+.gustav{
+    color: #FFC72C;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav-item{
+    font-weight: normal;
+    font-size: 22px;
 }

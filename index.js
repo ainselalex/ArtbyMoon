@@ -1,4 +1,3 @@
-// alert("Hello there");
 
 function toggleDropdown() {
     const menu = document.getElementById('dropdown-menu');
