@@ -1,0 +1,282 @@
+
+.marquee-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #F0E9B1; 
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; 
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.art-moon {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.art-moon img {
+    vertical-align: middle; 
+}
+
+.header-titles {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 0 20px; 
+    align-items: center; 
+}
+
+.boston-gallery {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; 
+    position: relative; 
+}
+
+.boston-gallery::before,
+.boston-gallery::after {
+    content: "~"; 
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;  
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.boston-gallery::before {
+    left: -50px; 
+}
+
+.boston-gallery::after {
+    right: -50px; 
+}
+
+
+.divider {
+    width: 100%; 
+    height: 1px; 
+    background-color: rgb(85, 84, 84); 
+    margin-top: 5px; 
+}
+
+
+.menu-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-categories {
+    display: flex;
+    align-items: center;
+}
+
+.menu-categories a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+}
+
+.menu-categories a:last-child {
+    border-right: none;
+}
+
+.menu-categories a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.user-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    margin-left: 20px; 
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 50px; 
+    right: 0; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    width: 150px; 
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.show {
+    display: block;
+}
+
+
+.row {
+    margin-bottom: 60px; 
+}
+
+.img-fluid {
+    margin-left: 20px; 
+}
+
+.gallery-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-first{
+    margin-bottom: 30px;
+}
+
+
+/* .album {
+    width: 100%;
+    text-align: center;
+}
+
+.album-pictures .card {
+    border: none; 
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.album-pictures .card:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.album-pictures .card-img-top {
+    width: 100%; 
+    height: auto; 
+}
+
+.album-pictures{
+    background-color: whitesmoke;
+}
+
+.gustav{
+    color: #FFC72C;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav-item{
+    font-weight: normal;
+    font-size: 22px;
+} */
+
+.album {
+    width: 100%;
+    text-align: center;
+}
+
+.album-pictures .card {
+    border: none; 
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; /* Указывает, что элемент кликабельный */
+}
+
+.album-pictures .card:hover {
+    transform: scale(1.1); /* Увеличивает карточку при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Добавляет тень для выделения */
+}
+
+.album-pictures .card-img-top {
+    width: 100%; /* Устанавливает ширину изображения на 100% от родительского элемента */
+    height: 200px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезает изображение, сохраняя его пропорции, чтобы оно заполнило контейнер */
+    transition: transform 0.3s ease; /* Плавный переход для трансформации изображения */
+}
+
+.album-pictures .card:hover .card-img-top {
+    transform: scale(1.1); /* Увеличивает изображение при наведении на карточку */
+}
+
+.album-pictures {
+    background-color: whitesmoke;
+}
+
+.gustav {
+    color: #FFC72C;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav-item {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.modal-dialog {
+    max-width: 90%; /* Ограничивает ширину модального окна до 90% экрана */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.modal-body img {
+    width: 100%; /* Изображение занимает всю ширину модального окна */
+    height: auto; /* Высота автоматически подстраивается по пропорциям */
+}
